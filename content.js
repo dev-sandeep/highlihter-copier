@@ -14,8 +14,7 @@ function myFunction() {
       array.push(nodes[i].innerHTML);
     }
     var str = array.join("\r\r");
-    console.log("STR: ", str);
-
+    str += "\r <" + document.URL + ">";
     var el = document.createElement('textarea');
     el.value = str;
     document.body.appendChild(el);
@@ -25,7 +24,3 @@ function myFunction() {
 }
 
 myFunction();
-
-// position: fixed;
-// right: 10px;
-// bottom: 10px;
