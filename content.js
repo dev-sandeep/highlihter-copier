@@ -1,12 +1,9 @@
 function myFunction() {
   var btn = document.createElement("BUTTON");   // Create a <button> element
-  btn.innerHTML = "Copy";                   // Insert text
+  btn.innerHTML = "Copy";
+  btn.setAttribute("id", "button-highlighter-copier");                // Insert text
   document.body.appendChild(btn);
-  btn.style.position = 'fixed';
-  btn.style.bottom = '10px';
-  btn.style.right = '10px';
-  btn.style.zoom = '0.8';
-
+  
   btn.addEventListener('click', function () {
     var nodes = document.getElementsByClassName("highlighted");
     var array = [];
